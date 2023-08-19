@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #3b3e42;
+    overflow-x: hidden;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.svg-logo {
+    fill: red;
+}
+
+#model-s {
+    background: url("./assets/M3-Homepage-D.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#model-3 {
+    background: url("./assets/model-y_R1@2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#model-x {
+    background: url("./assets/ms-main-hero-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#model-y {
+    background: url("./assets/MX-Hero-Desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#solar-panel {
+    background: url("./assets/solar-panel-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#solar-roof {
+    background: url("./assets/sr-storm-desktop.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Adjust timing as needed */
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
